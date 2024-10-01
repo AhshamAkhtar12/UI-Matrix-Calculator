@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Matrix Calculator</h1>
+        
+        <div class="matrix-input">
+            <h2>Matrix A</h2>
+            <table id="matrixA">
+                <tr><td><input type="number" placeholder="0"></td><td><input type="number" placeholder="0"></td></tr>
+                <tr><td><input type="number" placeholder="0"></td><td><input type="number" placeholder="0"></td></tr>
+            </table>
+            <button onclick="addRow('matrixA')">Add Row</button>
+            <button onclick="addColumn('matrixA')">Add Column</button>
+        </div>
+
+        <div class="matrix-input">
+            <h2>Matrix B</h2>
+            <table id="matrixB">
+                <tr><td><input type="number" placeholder="0"></td><td><input type="number" placeholder="0"></td></tr>
+                <tr><td><input type="number" placeholder="0"></td><td><input type="number" placeholder="0"></td></tr>
+            </table>
+            <button onclick="addRow('matrixB')">Add Row</button>
+            <button onclick="addColumn('matrixB')">Add Column</button>
+        </div>
+<br>
+        <button id="calculate" onclick="calculateSum()">Calculate Sum</button>
+        <h2>Result Matrix</h2>
+        <div id="resultMatrix"></div>
+    </div>
+    <h5><i>Developed by &copy;Ahsham </i></h5>
+    <script src="script.js"></script>
+</body>
+</html>
